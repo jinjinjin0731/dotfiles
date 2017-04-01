@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
 ## Oh-my-zsh Plugins
-plugins=(git osx autojump ruby sublime brew history atom dirhistory nvm-auto)
+plugins=(git osx autojump ruby sublime brew history atom dirhistory nvm-auto zsh-autosuggestions)
 
 # Bullet Train
 # https://github.com/caiogondim/bullet-train-oh-my-zsh-theme

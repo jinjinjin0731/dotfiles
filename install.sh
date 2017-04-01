@@ -35,7 +35,12 @@ if [ "$(uname)" == "Darwin" ]; then
     if [ ! -d $ZSH_CUSTOM/plugins ]; then
         mkdir -p $ZSH_CUSTOM/plugins/
     fi
+
+    echo -e "\nInstalling nvm-auto plugin"
     git clone https://github.com/dijitalmunky/nvm-auto.git $ZSH_CUSTOM/plugins/nvm-auto
+
+    echo -e "\nInstalling zsh-autosuggestions plugin"
+    git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
 
     echo -e "\nBrewing all the things"
     source $DOTFILES/install/brew.sh
