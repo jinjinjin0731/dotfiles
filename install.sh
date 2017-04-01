@@ -53,6 +53,8 @@ fi
 echo -e "\nConfiguring zsh as default shell"
 chsh -s $(which zsh)
 
+exec zsh
+
 echo -e "\nDone."
 echo -e "You should reload oh-my-zsh with command: \n\tsource ~/.zshrc"
 exit 0
