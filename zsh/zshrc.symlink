@@ -8,7 +8,7 @@ for config ($ZSH/**/*.zsh) source $config
 [ -z "$TMUX" ] && export TERM=xterm-256color
 
 export LANG=en_US.UTF-8
-export EDITOR='subl'
+export EDITOR='code'
 
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
