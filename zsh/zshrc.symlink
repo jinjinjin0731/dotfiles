@@ -10,27 +10,28 @@ for config ($ZSH/**/*.zsh) source $config
 export LANG=en_US.UTF-8
 export EDITOR='code'
 
-export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
+
+# adding path directory for custom scripts
+export PATH="$DOTFILES/bin:$PATH"
 
 # Golang
 export GOPATH=$HOME/.go
 export PATH=$PATH:$GOPATH/bin
 
-# adding path directory for custom scripts
-export PATH="$DOTFILES/bin:$PATH"
-export PATH="$PATH:$HOME/.yarn/bin" # yarn
+# Yarn
+export PATH="$PATH:$HOME/.yarn/bin"
 
-# faster electron downloads
-export ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/
-
-# fastlane
+# Fastlane
 export PATH="$HOME/.fastlane/bin:$PATH"
 
 source ~/.bash_profile
 
+# nvm
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
+# nvm-auto-switch
 source /usr/local/opt/nvm-auto-switch/nvm-auto-switch.sh
+

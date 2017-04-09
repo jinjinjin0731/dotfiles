@@ -1,15 +1,24 @@
 DOTFILES=$HOME/dotfiles
 export ZSH=$HOME/.oh-my-zsh
 
-### Autojump
+# Plugins
+
+## Autojump
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
-## Oh-my-zsh Plugins
-plugins=(git osx autojump ruby sublime brew history atom dirhistory nvm-auto zsh-autosuggestions)
+## Oh-my-zsh
+## Other available options: sublime / atom / ruby
+plugins=(git osx autojump brew history dirhistory nvm-auto-switch zsh-better-npm-completion zsh-autosuggestions)
 
-# Bullet Train
-# https://github.com/caiogondim/bullet-train-oh-my-zsh-theme
-ZSH_THEME="bullet-train" # "agnoster"
+
+# Mirrors
+
+## Electron
+export ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/
+
+# Theme: Bullet Train
+## https://github.com/caiogondim/bullet-train-oh-my-zsh-theme
+ZSH_THEME="bullet-train"
 export BULLETTRAIN_DIR_FG=black
 export BULLETTRAIN_DIR_EXTENDED=2
 export BULLETTRAIN_GIT_COLORIZE_DIRTY=true
@@ -24,4 +33,4 @@ export BULLETTRAIN_TIME_FG=black
 export BULLETTRAIN_NVM_SHOW=true
 export BULLETTRAIN_VIRTUALENV_SHOW=false
 
-source $HOME/.oh-my-zsh/oh-my-zsh.sh
+source $ZSH/oh-my-zsh.sh
