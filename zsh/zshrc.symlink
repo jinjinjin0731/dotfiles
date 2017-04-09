@@ -33,4 +33,4 @@ source ~/.bash_profile
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-nvm_auto_switch
+source /usr/local/opt/nvm-auto-switch/nvm-auto-switch.sh
