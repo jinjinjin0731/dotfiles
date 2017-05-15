@@ -35,3 +35,5 @@ export NVM_DIR="$HOME/.nvm"
 # nvm-auto-switch
 source /usr/local/opt/nvm-auto-switch/nvm-auto-switch.sh
 
+# thefuck
+eval "$(thefuck --alias)"

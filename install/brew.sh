@@ -38,6 +38,7 @@ brew_install_or_upgrade zsh
 brew_install_or_upgrade git
 brew_install_or_upgrade git-lfs
 brew_install_or_upgrade autojump
+brew_install_or_upgrade thefuck
 
 brew_install_or_upgrade tmux
 brew_install_or_upgrade reattach-to-user-namespace
