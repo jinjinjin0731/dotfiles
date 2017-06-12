@@ -30,8 +30,10 @@ brew_install_or_upgrade wget
 brew_install_or_upgrade nginx
 
 # node.js
-brew_install_or_upgrade nvm
 brew install https://raw.githubusercontent.com/lalitkapoor/nvm-auto-switch/master/homebrew/nvm-auto-switch.rb
+
+# python
+brew_install_or_upgrade python
 
 # development tools
 brew_install_or_upgrade zsh

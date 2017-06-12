@@ -7,6 +7,8 @@ for config ($ZSH/**/*.zsh) source $config
 
 [ -z "$TMUX" ] && export TERM=xterm-256color
 
+source ~/.bash_profile
+
 export LANG=en_US.UTF-8
 export EDITOR='code'
 
@@ -26,14 +28,17 @@ export PATH="$PATH:$HOME/.yarn/bin"
 # Fastlane
 export PATH="$HOME/.fastlane/bin:$PATH"
 
-source ~/.bash_profile
+# python
+export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # nvm-auto-switch
 source /usr/local/opt/nvm-auto-switch/nvm-auto-switch.sh
 
 # thefuck
 eval "$(thefuck --alias)"
+
