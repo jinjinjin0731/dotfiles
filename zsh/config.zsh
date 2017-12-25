@@ -17,6 +17,7 @@ plugins=(git osx autojump brew history dirhistory nvm-auto-switch zsh-better-npm
 # --------
 export ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/        # Electron
 export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/dist               # nvm
+export NVM_IOJS_ORG_MIRROR=https://npm.taobao.org/mirrors/iojs         # nvm-iojs
 export PHANTOMJS_CDNURL=https://npm.taobao.org/dist/phantomjs          # phantomjs
 export SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass/      # node-sass
 export CHROMEDRIVER_CDNURL=http://npm.taobao.org/mirrors/chromedriver  # ChromeDriver
