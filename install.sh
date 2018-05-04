@@ -21,20 +21,24 @@ if [ "$(uname)" == "Darwin" ]; then
     echo -e "\n-- Running on OSX"
 
     echo -e "\nUpdating OSX settings"
-    source $DOTFILES/install/osx.sh
+    source $DOTFILES/scripts/osx.sh
 
     echo -e "\nBrewing all the things"
-    source $DOTFILES/install/brew.sh
+    source $DOTFILES/scripts/brew.sh
 
-    # Install Tmux Plugin Manager
-    source $DOTFILES/install/tpm.sh
+elif [ "$(uname)" == "Linux" ]; then
+    echo -e "\nInstall linux packages"
+    source $DOTFILES/scripts/linux.sh
 fi
 
+# Install Tmux Plugin Manager
+source $DOTFILES/scripts/tpm.sh
+
 echo -e "\nSetup Oh My Zsh"
-source $DOTFILES/install/oh-my-zsh.sh
+source $DOTFILES/scripts/oh-my-zsh.sh
 
 ## Create Symlinks
-source $DOTFILES/install/link.sh
+source $DOTFILES/scripts/link.sh
 
 ## Changing to zsh
 echo -e "\nConfiguring zsh as default shell"
