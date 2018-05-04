@@ -38,11 +38,25 @@ source $DOTFILES/install/link.sh
 
 ## Changing to zsh
 echo -e "\nConfiguring zsh as default shell"
-shell_path="$(which zsh)"
-if ! grep "$shell_path" /etc/shells > /dev/null 2>&1 ; then
-    sudo sh -c "echo $shell_path >> /etc/shells"
+TEST_CURRENT_SHELL=$(expr "$SHELL" : '.*/\(.*\)')
+if [ "$TEST_CURRENT_SHELL" != "zsh" ]; then
+    # If this platform provides a "chsh" command (not Cygwin), do it, man!
+    if hash chsh >/dev/null 2>&1; then
+        printf "Time to change your default shell to zsh!\n"
+        chsh -s $(grep /zsh$ /etc/shells | tail -1)
+    # Else, suggest the user do so manually.
+    else
+        printf "I can't change your shell automatically because this system does not have chsh.\n"
+        printf "Please manually change your default shell to zsh!\n"
+    fi
 fi
-chsh -s "$shell_path"
+
+echo '         __                                     __   '
+echo '  ____  / /_     ____ ___  __  __   ____  _____/ /_  '
+echo ' / __ \/ __ \   / __ `__ \/ / / /  /_  / / ___/ __ \ '
+echo '/ /_/ / / / /  / / / / / / /_/ /    / /_(__  ) / / / '
+echo '\____/_/ /_/  /_/ /_/ /_/\__, /    /___/____/_/ /_/  '
+echo '                        /____/                       ....is now installed!'
 
 exec zsh
 
