@@ -33,6 +33,9 @@ if [ ! "$(ls -A $DOTFILES/config)" ]; then
     echo "No contents in config... Skipping."
 else
     for config in $DOTFILES/config/*; do
+        if [ "$config" == ".gitkeep" ]; then
+            continue
+        fi
         target=$HOME/.config/$( basename $config )
         if [ -e $target ]; then
             echo "~${target#$HOME} already exists... Skipping."
