@@ -13,9 +13,6 @@ fi
 echo -e "\nInitializing submodule(s)"
 git submodule update --init --recursive
 
-## Create Symlinks
-source $DOTFILES/install/link.sh
-
 ## Install nvm
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
 
@@ -35,6 +32,9 @@ fi
 
 echo -e "\nSetup Oh My Zsh"
 source $DOTFILES/install/oh-my-zsh.sh
+
+## Create Symlinks
+source $DOTFILES/install/link.sh
 
 ## Changing to zsh
 echo -e "\nConfiguring zsh as default shell"
