@@ -1,7 +1,7 @@
 #!/bin/zh
 
 ## Install Oh My Zsh
-if [ ! -d $HOME/.oh-my-zsh ]; then
+if [ ! -d $HOME/.oh-my-zsh ] || [ ! -f $HOME/.oh-my-zsh/oh-my-zsh.sh ]; then
     echo -e "\nInstalling Oh My Zsh"
     sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 fi
