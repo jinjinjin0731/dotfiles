@@ -5,6 +5,8 @@ This is my collection of zsh / tmux / osx / brew / git / ... configurations.
 ![dotfiles](https://cloud.githubusercontent.com/assets/6262943/19597521/ba234cca-97c7-11e6-9f9f-473f103e1f6f.jpeg)
 
 ## Setup
+
+### Mac
 ```bash
 # Install required CLI tools
 xcode-select --install
@@ -15,12 +17,20 @@ git clone https://github.com/chuyik/dotfiles.git ~/dotfiles
 ./dotfiles/install.sh
 ```
 
+### Linux
+```bash
+# Clone this repo and initialize everything
+# Better checkout install.sh and customize it before start
+git clone https://github.com/chuyik/dotfiles.git ~/dotfiles
+./dotfiles/install.sh
+```
+
 ## Themes
 
-For your reference, these themes will be installed:
+For your reference, these themes are used in screenshot:
 
-- iTerm2 Color scheme: [Oceanic Dark](https://github.com/mhartington/oceanic-next-iterm)
-- oh-my-zsh theme: [Bullet Train](https://github.com/caiogondim/bullet-train-oh-my-zsh-theme)
+- `iTerm2 Color` scheme: [Oceanic Dark](https://github.com/mhartington/oceanic-next-iterm)
+- `oh-my-zsh` theme (will be installed): [Bullet Train](https://github.com/caiogondim/bullet-train-oh-my-zsh-theme)
 
 ## Note
 
