@@ -2,8 +2,11 @@
 
 ## Install Oh My Zsh
 if [ ! -d $HOME/.oh-my-zsh ] || [ ! -f $HOME/.oh-my-zsh/oh-my-zsh.sh ]; then
+    if [ ! -f $HOME/.oh-my-zsh/oh-my-zsh.sh ]; then
+      rm -rf $HOME/.oh-my-zsh
+    fi
     echo -e "\nInstalling Oh My Zsh"
-    sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    git clone https://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh
 fi
 
 DOTFILES=$HOME/dotfiles
