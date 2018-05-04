@@ -1,9 +1,11 @@
 export DOTFILES=$HOME/dotfiles
-ZSH=$DOTFILES/zsh
+export ZSH=/root/.oh-my-zsh
+
+ZSH_CONFIGS=$DOTFILES/zsh
 
 DEFAULT_USER=$USER
 
-for config ($ZSH/**/*.zsh) source $config
+for config ($ZSH_CONFIGS/**/*.zsh) source $config
 
 [ -z "$TMUX" ] && export TERM=xterm-256color
 
