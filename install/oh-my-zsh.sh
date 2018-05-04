@@ -21,6 +21,10 @@ if [ ! -d $ZSH_CUSTOM/plugins ]; then
     mkdir -p $ZSH_CUSTOM/plugins/
 fi
 
+if [ ! -d $ZSH_CUSTOM/plugins/nvm-auto ]; then
+git clone https://github.com/dijitalmunky/nvm-auto.git $ZSH/custom/plugins/nvm-auto
+fi
+
 if [ ! -d $ZSH_CUSTOM/plugins/zsh-better-npm-completion ]; then
     echo -e "\nInstalling zsh-better-npm-completion plugin"
     git clone https://github.com/lukechilds/zsh-better-npm-completion $ZSH_CUSTOM/plugins/zsh-better-npm-completion

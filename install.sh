@@ -31,10 +31,10 @@ if [ "$(uname)" == "Darwin" ]; then
 
     # Install Tmux Plugin Manager
     source $DOTFILES/install/tpm.sh
-
-    echo -e "\nSetup Oh My Zsh"
-    source $DOTFILES/install/oh-my-zsh.sh
 fi
+
+echo -e "\nSetup Oh My Zsh"
+source $DOTFILES/install/oh-my-zsh.sh
 
 ## Changing to zsh
 echo -e "\nConfiguring zsh as default shell"

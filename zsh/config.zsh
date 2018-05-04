@@ -5,12 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Plugins
 # --------
 
-## Autojump
-[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
-
-## Oh-my-zsh
-## Available options: sublime atom ruby
-plugins=(git osx autojump brew history dirhistory nvm-auto-switch zsh-better-npm-completion zsh-autosuggestions)
+plugins=(git osx autojump brew history dirhistory nvm-auto zsh-better-npm-completion zsh-autosuggestions)
 
 # --------
 # Mirrors

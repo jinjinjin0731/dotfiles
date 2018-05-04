@@ -44,3 +44,6 @@ brew_install_or_upgrade thefuck
 
 brew_install_or_upgrade tmux
 brew_install_or_upgrade reattach-to-user-namespace
+
+## Autojump
+[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
