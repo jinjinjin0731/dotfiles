@@ -13,7 +13,7 @@ for config ($ZSH_CONFIGS/**/*.zsh) source $config
 [ -s "$HOME/.zprofile" ] && source $HOME/.zprofile
 
 export LANG=en_US.UTF-8
-export EDITOR='code'
+command -v code >/dev/null && export EDITOR='code'
 
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
@@ -46,3 +46,5 @@ command -v nvm_auto_switch >/dev/null && nvm_auto_switch
 # thefuck
 command -v thefuck >/dev/null && eval "$(thefuck --alias)"
 
+# autojump-zsh
+[[ -s /usr/share/autojump/autojump.zsh ]] && . /usr/share/autojump/autojump.zsh
