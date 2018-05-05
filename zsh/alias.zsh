@@ -1,3 +1,4 @@
+alias vi="vim"
 alias cls="clear"
 alias javac="javac -J-Dfile.encoding=utf8"
 alias zshrc="vi ~/.zshrc"
