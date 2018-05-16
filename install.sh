@@ -26,9 +26,15 @@ if [ "$(uname)" == "Darwin" ]; then
     echo -e "\nBrewing all the things"
     source $DOTFILES/scripts/brew.sh
 
+    echo -e "\nInstall *nix packages"
+    source $DOTFILES/scripts/nix.sh
+
 elif [ "$(uname)" == "Linux" ]; then
     echo -e "\nInstall linux packages"
     source $DOTFILES/scripts/linux.sh
+
+    echo -e "\nInstall *nix packages"
+    source $DOTFILES/scripts/nix.sh
 fi
 
 # Install Tmux Plugin Manager

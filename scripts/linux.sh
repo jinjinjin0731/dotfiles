@@ -7,7 +7,3 @@ ln -sv /usr/local/bin/pacapt /usr/local/bin/pacman || true
 
 # install autojump-zsh
 pacapt -S --noconfirm autojump-zsh
-
-# install vim-plug
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
