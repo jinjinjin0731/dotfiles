@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Plugins
 # --------
 
-plugins=(git osx autojump brew history dirhistory nvm-auto zsh-better-npm-completion zsh-autosuggestions)
+plugins=(git osx autojump brew history dirhistory nvm zsh-better-npm-completion zsh-autosuggestions)
 
 # --------
 # Mirrors
@@ -34,8 +34,8 @@ export BULLETTRAIN_GIT_EXTENDED=false
 export BULLETTRAIN_EXEC_TIME_SHOW=true
 export BULLETTRAIN_EXEC_TIME_ELAPSED=1
 export BULLETTRAIN_EXEC_TIME_BG=cyan
-export BULLETTRAIN_TIME_BG=black
-export BULLETTRAIN_TIME_FG=black
+# export BULLETTRAIN_TIME_BG=black
+# export BULLETTRAIN_TIME_FG=black
 export BULLETTRAIN_NVM_SHOW=true
 export BULLETTRAIN_VIRTUALENV_SHOW=false
 
