@@ -1,7 +1,9 @@
 # .tmux.conf
 # Edward Chu <crazyzyt@gmail.com>
 
-set -g default-command "reattach-to-user-namespace -l zsh"
+if-shell -b '[ $(uname -s) = "Darwin" ]' \
+  'set -g default-command "reattach-to-user-namespace -l zsh"'
+
 set -g default-terminal "screen-256color"
 
 set -g history-limit 5000
