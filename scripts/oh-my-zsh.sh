@@ -16,8 +16,8 @@ ZSH_CUSTOM=$HOME/.oh-my-zsh/custom
 if [ ! -d $ZSH_CUSTOM/themes ]; then
     mkdir -p $ZSH_CUSTOM/themes/
 fi
-ln -s $DOTFILES/oh-my-zsh/themes/bullet-train.zsh-theme $ZSH_CUSTOM/themes/bullet-train.zsh-theme
-ln -s $DOTFILES/oh-my-zsh/themes/bullet-train.zsh-theme $HOME/.oh-my-zsh/themes/bullet-train.zsh-theme
+ln -s $DOTFILES/oh-my-zsh/themes/astro.zsh-theme $ZSH_CUSTOM/themes/astro.zsh-theme
+ln -s $DOTFILES/oh-my-zsh/themes/astro.zsh-theme $HOME/.oh-my-zsh/themes/astro.zsh-theme
 
 ## Plugins
 if [ ! -d $ZSH_CUSTOM/plugins ]; then
