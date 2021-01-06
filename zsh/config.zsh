@@ -10,13 +10,11 @@ plugins=(git osx autojump brew history dirhistory nvm zsh-better-npm-completion 
 # --------
 # Mirrors
 # --------
-export ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/        # Electron
-export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/dist               # nvm
-export NVM_IOJS_ORG_MIRROR=https://npm.taobao.org/mirrors/iojs         # nvm-iojs
-export PHANTOMJS_CDNURL=https://npm.taobao.org/dist/phantomjs          # phantomjs
-export SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass/      # node-sass
-export CHROMEDRIVER_CDNURL=http://npm.taobao.org/mirrors/chromedriver  # ChromeDriver
-export SELENIUM_CDNURL=http://npm.taobao.org/mirrorss/selenium         # Selenium
+# export ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/        # Electron
+# export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/dist               # nvm
+# export PHANTOMJS_CDNURL=https://npm.taobao.org/dist/phantomjs          # phantomjs
+# export SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass/      # node-sass
+
 
 
 # --------
@@ -24,7 +22,7 @@ export SELENIUM_CDNURL=http://npm.taobao.org/mirrorss/selenium         # Seleniu
 #   Bullet Train
 #   https://github.com/caiogondim/bullet-train-oh-my-zsh-theme
 # --------
-ZSH_THEME="bullet-train"
+ZSH_THEME="astro"
 export BULLETTRAIN_DIR_FG=black
 export BULLETTRAIN_DIR_EXTENDED=2
 export BULLETTRAIN_GIT_COLORIZE_DIRTY=true

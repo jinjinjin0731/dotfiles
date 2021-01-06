@@ -10,11 +10,11 @@ if [ ! -e "$HOME/.bash_profile" ]; then
 fi
 
 ## Install Submodules
-echo -e "\nInitializing submodule(s)"
-git submodule update --init --recursive
+# echo -e "\nInitializing submodule(s)"
+# git submodule update --init --recursive
 
 ## Install nvm
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.37.2/install.sh | bash
 
 ## Install or Configure OSX
 if [ "$(uname)" == "Darwin" ]; then
@@ -36,9 +36,6 @@ elif [ "$(uname)" == "Linux" ]; then
     echo -e "\nInstall *nix packages"
     source $DOTFILES/scripts/nix.sh
 fi
-
-# Install Tmux Plugin Manager
-source $DOTFILES/scripts/tpm.sh
 
 echo -e "\nSetup Oh My Zsh"
 source $DOTFILES/scripts/oh-my-zsh.sh
